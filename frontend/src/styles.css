@@ -1,0 +1,156 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+a{
+  color: #1b4959 !important;
+  text-decoration: none !important;
+}
+
+/* You can add global styles to this file, and also import other style files */
+.card-box {
+    padding: 10px;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+}
+
+.btn-block {
+    /* display: block;
+    width: 100%; */
+}
+.header{
+    width: 100%;
+    background-color: lightblue;
+    height: 40px;
+}
+
+.menulink{
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+.error{
+    color: red;
+}
+.sucess{
+    color: green;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+/* Toggle Styles */
+
+#viewport {
+    padding-left: 250px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#content {
+    width: 100%;
+    position: relative;
+    margin-right: 0;
+}
+
+body{
+  background-color: #99c9d9 !important;
+}
+
+.app{
+  margin: 20px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: calc(100vh - 40px);
+  box-shadow: 0 0 10px #00000020;
+}
+
+.contact-list{
+  width: 300px;
+  background-color: #99c9d950;
+}
+
+.chat{
+  width: calc(100% - 300px);
+}
+
+.chat-head{
+  padding: 10px;
+  height: 70px;
+  background-color: #99c9d950;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user-photo{
+  height: 50px;
+  border-radius: 50%;
+}
+
+.user-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.user-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.user-name{
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.user-status{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.last-message{
+
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+
+.contact-head{
+  padding: 10px;
+  height: 70px;
+  background-color: #99c9d950;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.contact-body{
+  padding: 12px 10px 12px 10px;
+  overflow-y: auto;
+  max-height: calc(100vh - 110px);
+}
+
+.contact{
+  padding: 12px 0;
+  border-bottom: 1px solid #99c9d950;
+  cursor: pointer;
+}
+

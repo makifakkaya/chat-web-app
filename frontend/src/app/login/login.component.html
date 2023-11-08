@@ -1,0 +1,29 @@
+<section class="vh-100" style="background-color: #F4F6F8;">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                    <div class="card-body p-5">
+                        <form [formGroup]="Login" (ngSubmit)="proceedLogin()">
+                            <h3 class="mb-5 fw-semibold">Frontend</h3>
+
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="typeEmailX-2">Email</label>
+                                <input type="email" id="typeEmailX-2" class="form-control form-control-m"
+                                       formControlName="email"/>
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="typePasswordX-2">Password</label>
+                                <input type="password" id="typePasswordX-2" class="form-control form-control-m"
+                                       formControlName="password"/>
+                            </div>
+
+                            <button style="width: 100%;" class="btn btn-primary btn-m btn-block" type="submit">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
