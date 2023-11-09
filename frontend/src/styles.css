@@ -62,7 +62,7 @@ body {
 }
 
 body{
-  background-color: #99c9d9 !important;
+  background-color: #507d8c !important;
 }
 
 .app{
@@ -118,10 +118,10 @@ body{
   line-height: 20px;
 }
 
-.user-status{
+.user-description{
   font-weight: 400;
   font-size: 13px;
-  line-height: 20px;
+  line-height: 13px;
 }
 
 .last-message{
@@ -145,7 +145,7 @@ body{
 .contact-body{
   padding: 12px 10px 12px 10px;
   overflow-y: auto;
-  max-height: calc(100vh - 110px);
+  max-height: calc(100vh - 155px);
 }
 
 .contact{
@@ -179,7 +179,7 @@ body{
   bottom: 0;
 }
 
-.text-input input{
+.text-input textarea{
   width: 100% !important;
 }
 
@@ -193,25 +193,23 @@ body{
 .message{
   padding: 6px 12px;
   border-radius: 6px 6px 6px 6px;
-  background-color: #DBE7EEFF;
+  background-color: #e7f4fc;
 }
 
 .left-bubble{
   width: 0;
   display: none;
   height: 0;
-  border-top: 5px solid transparent;
-  border-right: 10px solid #DBE7EEFF;
-  border-bottom: 5px solid transparent;
+  border-right: 10px solid #e7f4fc;
+  border-bottom: 15px solid transparent;
 }
 
 .right-bubble{
   width: 0;
   display: none;
   height: 0;
-  border-top: 5px solid transparent;
-  border-left: 10px solid #A1D3E3FF;
-  border-bottom: 5px solid transparent;
+  border-left: 10px solid #cce6ee;
+  border-bottom: 15px solid transparent;
 }
 
 .owner .right-bubble{
@@ -220,7 +218,7 @@ body{
 
 .owner .message{
   border-radius: 6px 0 6px 6px;
-  background-color: #A1D3E3FF;
+  background-color: #cce6ee;
 }
 
 .reader .left-bubble{
@@ -251,10 +249,9 @@ body{
 .text-input{
   height: 60px;
   padding: 10px 15px 10px 15px;
-  box-shadow: 0 0 2px #59a6bd75;
 }
 
-.text-input input{
+.text-input textarea{
   height: 100%;
   padding: 5px 10px 5px 10px;
   margin: 0 10px;
@@ -263,7 +260,7 @@ body{
 }
 
 
-.text-input input:focus{
+.text-input textarea:focus{
   outline: 0;
   border: 1px solid #508596;
 }
@@ -282,5 +279,82 @@ body{
 
 
 .messages{
+  background-color: #f0f2f525;
   background-size: cover;
+}
+
+
+.messages{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+
+.message {
+  max-width: 600px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .message {
+    max-width: 80%;
+  }
+}
+
+
+.time-info{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  color: rgb(128, 128, 128);
+  font-size: 13px;
+}
+
+
+.hide{
+  display: none;
+}
+
+.time-info i{
+  font-size: 20px;
+  margin-left: 3px;
+  line-height: 18px;
+}
+
+.time-info .bi-check2-all{
+  color: deepskyblue;
+}
+
+
+.text-input textarea {
+  resize: none;
+}
+
+
+.contact-body-head{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact-body-tab{
+  background: #22667e25;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.contact-body-tab.active{
+  background: #22667e;
+  color: white;
+}
+
+
+.contact-body-head{
+  height: 45px;
 }
