@@ -154,3 +154,133 @@ body{
   cursor: pointer;
 }
 
+.user-title{
+  width: 100%;
+}
+
+.user-name{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.options:hover{
+  background-color: #99c9d950;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.chat-head .options i{
+  font-size: 22px;
+  padding: 5px;
+}
+.text-input{
+  bottom: 0;
+}
+
+.text-input input{
+  width: 100% !important;
+}
+
+.message-bubble{
+  margin: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.message{
+  padding: 6px 12px;
+  border-radius: 6px 6px 6px 6px;
+  background-color: #DBE7EEFF;
+}
+
+.left-bubble{
+  width: 0;
+  display: none;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 10px solid #DBE7EEFF;
+  border-bottom: 5px solid transparent;
+}
+
+.right-bubble{
+  width: 0;
+  display: none;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-left: 10px solid #A1D3E3FF;
+  border-bottom: 5px solid transparent;
+}
+
+.owner .right-bubble{
+  display: initial;
+}
+
+.owner .message{
+  border-radius: 6px 0 6px 6px;
+  background-color: #A1D3E3FF;
+}
+
+.reader .left-bubble{
+  display: initial;
+}
+.reader .message{
+  border-radius: 0 6px 6px 6px;
+}
+
+.reader .message-bubble{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.owner .message-bubble{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.messages {
+  padding: 12px 10px 12px 10px;
+  overflow-y: auto;
+  max-height: calc(100vh - 170px);
+}
+
+.text-input{
+  height: 60px;
+  padding: 10px 15px 10px 15px;
+  box-shadow: 0 0 2px #59a6bd75;
+}
+
+.text-input input{
+  height: 100%;
+  padding: 5px 10px 5px 10px;
+  margin: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #99c9d9;
+}
+
+
+.text-input input:focus{
+  outline: 0;
+  border: 1px solid #508596;
+}
+
+.text-input{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.text-input i{
+  font-size: 20px;
+  padding: 5px;
+}
+
+
+.messages{
+  background-size: cover;
+}

@@ -2,28 +2,35 @@
   <div class="contact-list">
     <div class="contact-head">
       <div class="user-info">
-        <img class="user-photo" src="https://media.licdn.com/dms/image/D4D03AQHj_6OVqaTCpQ/profile-displayphoto-shrink_400_400/0/1687986911142?e=1704931200&v=beta&t=ANxVNyMvXDlbZNbrw8gk5qzkg_vMYN9cXSBJAdHJXyY">
+        <img class="user-photo"
+             src="https://media.licdn.com/dms/image/D4D03AQHj_6OVqaTCpQ/profile-displayphoto-shrink_400_400/0/1687986911142?e=1704931200&v=beta&t=ANxVNyMvXDlbZNbrw8gk5qzkg_vMYN9cXSBJAdHJXyY">
         <div class="user-title">
           <span class="user-name">
             Mehmet Akif Akkaya
           </span>
           <span class="user-status">
-            <a href=""><i class="bi bi-box-arrow-left"></i> Çıkış Yap</a>
+            <a href=""><i class="bi bi-box-arrow-left"></i> Logout</a>
           </span>
         </div>
       </div>
     </div>
     <div class="contact-body">
       <div *ngFor="let i of [1,2,3,4,5,6,7,8,9,10,11,12]">
-        <div class="user-info contact">
-          <img class="user-photo" src="https://media.licdn.com/dms/image/D4D03AQHj_6OVqaTCpQ/profile-displayphoto-shrink_400_400/0/1687986911142?e=1704931200&v=beta&t=ANxVNyMvXDlbZNbrw8gk5qzkg_vMYN9cXSBJAdHJXyY">
+        <div onclick="alert('chat')" class="user-info contact">
+          <img class="user-photo"
+               src="https://media.licdn.com/dms/image/D4D03AQHj_6OVqaTCpQ/profile-displayphoto-shrink_400_400/0/1687986911142?e=1704931200&v=beta&t=ANxVNyMvXDlbZNbrw8gk5qzkg_vMYN9cXSBJAdHJXyY">
           <div class="user-title">
-          <span class="user-name">
-            Mehmet Akif Akkaya
-          </span>
+            <span class="user-name">
+              <span>
+                Mehmet Akif Akkaya
+              </span>
+              <span onclick="alert('option')" class="options">
+                <i class="bi bi-chevron-down"></i>
+              </span>
+            </span>
             <span class="last-message">
-            Merhaba..
-          </span>
+              Hello..
+            </span>
           </div>
         </div>
       </div>
@@ -33,18 +40,47 @@
   <div class="chat">
     <div class="chat-head">
       <div class="user-info">
-        <img class="user-photo" src="https://media.licdn.com/dms/image/D4D03AQHj_6OVqaTCpQ/profile-displayphoto-shrink_400_400/0/1687986911142?e=1704931200&v=beta&t=ANxVNyMvXDlbZNbrw8gk5qzkg_vMYN9cXSBJAdHJXyY">
+        <img class="user-photo"
+             src="https://media.licdn.com/dms/image/D4D03AQHj_6OVqaTCpQ/profile-displayphoto-shrink_400_400/0/1687986911142?e=1704931200&v=beta&t=ANxVNyMvXDlbZNbrw8gk5qzkg_vMYN9cXSBJAdHJXyY">
         <div class="user-title">
           <span class="user-name">
-            Mehmet Akif Akkaya
+            <span>
+              Mehmet Akif Akkaya
+            </span>
+
+          <span onclick="alert('option')" class="options">
+                <i class="bi bi-chevron-down"></i>
+              </span>
           </span>
           <span class="user-status">
             Online
           </span>
+
         </div>
       </div>
     </div>
     <div class="chat-body">
+      <div class="messages">
+      <div *ngFor="let i of [1,2,2,2,1,1,1,2,1,2,1,2,2,2,1,1,1]">
+        <div [ngClass]="i % 2 == 0 ? 'owner' : 'reader'">
+          <div class="message-bubble">
+            <div class="left-bubble">
+            </div>
+            <div class="message">
+              <span>Hello, whats up??</span>
+            </div>
+            <div class="right-bubble">
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="text-input">
+        <i class="bi bi-emoji-smile"></i>
+        <i class="bi bi-plus-lg"></i>
+        <input placeholder="bir mesaj yazın." type="text">
+        <i class="bi bi-mic"></i>
+      </div>
     </div>
   </div>
 </div>
