@@ -1,4 +1,4 @@
 # chat-web-app
 Developed with Angular &amp; Node.js
 
-<img width="1552" alt="image" src="https://github.com/makifakkaya/chat-web-app/assets/60367291/0b0290fe-5436-4efb-98cf-c47277bd9cda">
+<img width="776" alt="resim" src="https://github.com/makifakkaya/chat-web-app/assets/60367291/3d03ce30-ae2e-4305-965f-0518bfd390c9">
